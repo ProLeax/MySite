@@ -109,7 +109,6 @@ span{
 
 .about {
   padding-top: 100px;
-  min-width: 1280px;
 }
 .about__h1 {
   color: var(--color-Yellow);
@@ -157,7 +156,10 @@ span{
     max-width: 100%;
   }
   .header{
-    min-width: 1280px;
+    width: 100%;
+  }
+  .about{
+    min-width: 500px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -165,6 +167,10 @@ span{
     grid-template-columns: repeat(1,1fr);
     justify-items: center;
     padding: 0;
+  }
+  .card__about{
+    margin: 0 auto;
+    min-width: 600px;
   }
   .item__grid{
     justify-items: center; 
