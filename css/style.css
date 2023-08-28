@@ -27,7 +27,7 @@ body {
   font-size: 25px;
 }
 .container{
-  width: 1240px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 .card__grid {
@@ -37,8 +37,9 @@ body {
   gap: 100px;
 }
 img{
-  min-width: 509px;
-  max-height: 509px;
+  max-width: 100%;
+  min-width: 500px;
+  max-height: 500px;
   border-radius: 50%;
 }
 .item__grid {
@@ -137,9 +138,30 @@ span{
 .work__ul{
   padding-left: 45px;
 }
+.p_foot{
+  color: var(--color-Yellow);
+  font-size: 40px;
+  font-weight: 800;
+}
 
 
-
-@media screen and() {
-  
+@media screen and (max-width: 1280px){
+  .container{
+    padding: 0 20px;
+  }
+  img{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__grid {
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+  }
+  .item__grid{
+    justify-items: center; 
+  }
+  .about{
+    text-align: center;
+  }
 }
